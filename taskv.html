@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="taskv.css">
+<script src="taskv.js"></script>
+<link rel="icon" href="img/git.png" >
+</head>
+<body>
+<form  id="f1">
+<div class="maain-sticky-bar">
+            
+			<ul>
+				<li><a class="logo" href=""><img class="githubpic" src="img/icon.png"/></a></li>
+				<li><input type="text"  class="input-box-inputtag" placeholder="Search GitHub"/></li>
+				<li><a href="">Pull Request</a></li>
+				<li><a href="">Issues</a></li>
+				<li><a href="">Marketplace</a></li>
+				<li><a href="">Explorer</a></li>
+				<li class="right-icon"><a href=""><i class="fal fa-bell"></i></a></li>
+				<li><a href=""><img src='img/plus.png' class='icon-img'></a></li>
+				<li><a href=""><img src='img/supreet.jpeg' class='icon-img'></a></li>
+				
+				
+			</ul>
+
+			
+			
+		</div>
+		
+
+
+<div id="main-div">
+	<div id="left-panel-div" class= "left-panel-div">
+		<div><img id="profile-pic-img"></div>
+		<div id ="name-div"></div>
+		<div id="uid-div"></div>
+		<div id="info-div"></div>
+        <div><button type="submit" class="btn" id="Edit-bio-btn">Edit Bio</button></div>
+		<hr class="new-hr">
+		<span><img id="target-pic-img" src="img/target.jpeg" class="icon-img"></span><span id="target-corporation-div">Target Corporation</span>
+		<div><span><img id="location-pic-img" src="img/location.jpeg" class="icon-img"></span><span id="country-div">India</span></div>
+		<div><span><img id="email-pic-img" src="img/mail.jpeg" class="icon-img"></span><span id="email-id">supreetsingh.247@gmail.com</span></div>
+	</div>
+	<div id="right-panel-div">
+			<div id="first-div-of-right-panel-div" >
+				<ul id="ul-tab-ul">
+				
+				  <li class="ul-tab-li2" id="tab-overview-btn" onclick="tabclick('tab-overview-btn')">Overview</li>
+				  <li class="ul-tab-li" id="tab-repository-btn" onclick="tabclick('tab-repository-btn')">Repositores<span class="counter-span" id="count-repo-span">11</span></li>
+				  <li class="ul-tab-li" id="tab-starts-btn" onclick="tabclick('tab-starts-btn')">Starts<span class="counter-span">5</span></li>
+				  <li class="ul-tab-li" id="tab-followers-btn" onclick="tabclick('tab-followers-btn')">Followers<span class="counter-span">2</span></li>
+				  <li class="ul-tab-li" id="tab-following-btn" onclick="tabclick('tab-following-btn')">Following<span class="counter-span">2</span></li>
+				</ul>
+				<br>
+			</div>
+			<br>
+
+			<hr class="new-hr" id="line-below-tab-hr" >
+			<div id="secound-div"> 
+				<input type="text" class="inp-serach" placeholder="serach repository" id="serach-box-input" onchange="data('all','all',this.value)"/>
+				<select  value="Type:All" id="btn-type-all-btn"  class="type-all-select" onchange="data('all',this.value,'')">
+				<option value="all">Type:All </option>
+				<option value="Forks">Forks</option>
+				<option value="Archived">Archived</option>
+				</select>
+				<select  value="Language:All" id="btn-LanguageAll-btn"  class="type-all-select" onchange="data(this.value,'all','')">
+				<option value="all" >Language:All </option>
+				<option value="JavaScript">JavaScript</option>
+				<option value="CSS">CSS</option>
+				<option value="HTML">HTML</option>
+				</select>
+				
+				<button  id="btn-new" ><img  src="img/book-icon.png" class= "icon-img"> New </button>
+			</div>
+			<hr class="new-hr">
+			<div id="repository-result-3-div">
+			</div>
+	</div>
+	</div>
+</div>
+</form>
+</body>
+</html>
